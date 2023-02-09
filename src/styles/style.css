@@ -1,0 +1,86 @@
+.pageWapper {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  overflow-x: hidden;
+}
+
+/* coponents generics */
+
+.containerGeneric {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--secondary--color);
+  border-radius: 1rem;
+  margin-top: 40px;
+  position: relative;
+  padding: 20px;
+}
+
+
+.containerGenericInfo {
+    height: 100%;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerGenericTitle{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.containerGenericTitle > h2 {
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 32px;
+}
+
+.containerGenericTitle > p {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 77px;
+}
+
+.buttonGeneric {
+    padding: 16px 32px;
+    height: 56px;
+    background-color: var(--primary--color);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttonGeneric__nobg{
+    padding: 8px 16px;
+    background: transparent;
+    color: var(--primary--color);
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+
+/* Container 1 */
+.containerButton{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

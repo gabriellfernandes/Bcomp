@@ -1,0 +1,39 @@
+.hamburger--button {
+  width: 30px;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.hamburger--button.active {
+  align-items: center;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.hamburger--button.active .bar1 {
+  transform: rotate(-45deg);
+}
+
+.hamburger--button.active .bar2 {
+  opacity: 0;
+}
+
+.hamburger--button.active .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

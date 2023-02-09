@@ -1,0 +1,10 @@
+:root{
+    --primary--color: #2715FF;
+    --secondary--color: white;
+}
+
+body{
+    font-family: Rubik, sans-serif;
+    background-color: #F6F7F9;
+    overflow-x: hidden;
+}

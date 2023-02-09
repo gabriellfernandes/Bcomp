@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BComp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyle.css" />
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/hamburguerButton.css" />
+    <link rel="stylesheet" href="./src/styles/header.css" />
+    <link rel="stylesheet" href="./src/styles/containerInfo.css">
+  </head>
+  <body>
+    <header>
+      <img src="./src/assets/logo_extendido.png" alt="Logo BComp" />
+
+      <div class="containerHeader">
+        <ul>
+          <li><a href="#">Planos</a></li>
+          <li><a href="#">Acessar Dashboard</a></li>
+        </ul>
+
+        <button id="hamburger-button" class="hamburger--button mobileHeader">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
+      </div>
+
+      <div  class="containerHeader__mobile mobileHeader">
+        <ul id="menu" class="hiddenMenu">
+            <li><a href="#">Planos</a></li>
+            <li><a href="#">Acessar Dashboard</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="pageWapper">
+        <div class="containerGeneric">
+            <div class="containerGenericInfo">
+                <div class="containerGenericTitle">
+                    <h2>Solução de pagamentos completa para você vender mais, simples assim!</h2>
+                    <p>A plataforma preferida para receber pagamentos de pequenas startups a grandes corporações.</p>
+                </div>
+                
+                <div class="containerButton">
+                    <button class="buttonGeneric">Criar conta gratuita</button>
+                    <button class="buttonGeneric__nobg">Fale com um especialista <img src="./src/assets/svg/arrow-main-color.svg" alt="seta para direita"></button>
+                </div>
+            </div>
+
+            <div>
+                <img src="./src/assets/svg/checkout.svg" alt="checkout">
+
+                <img src="./src/assets/svg/dashboard.svg" alt="dashbord">
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./src/scripts/script.js"></script>
+  </body>
+</html>
