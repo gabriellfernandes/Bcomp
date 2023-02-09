@@ -13,10 +13,9 @@
     />
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/globalStyle.css" />
-    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/style.css" />
     <link rel="stylesheet" href="./src/styles/hamburguerButton.css" />
     <link rel="stylesheet" href="./src/styles/header.css" />
-    <link rel="stylesheet" href="./src/styles/containerInfo.css">
   </head>
   <body>
     <header>
@@ -35,33 +34,56 @@
         </button>
       </div>
 
-      <div  class="containerHeader__mobile mobileHeader">
+      <div class="containerHeader__mobile mobileHeader">
         <ul id="menu" class="hiddenMenu">
-            <li><a href="#">Planos</a></li>
-            <li><a href="#">Acessar Dashboard</a></li>
+          <li><a href="#">Planos</a></li>
+          <li><a href="#">Acessar Dashboard</a></li>
         </ul>
       </div>
     </header>
     <div class="pageWapper">
+      <div class="containerPaymentSolution">
         <div class="containerGeneric">
-            <div class="containerGenericInfo">
-                <div class="containerGenericTitle">
-                    <h2>Solução de pagamentos completa para você vender mais, simples assim!</h2>
-                    <p>A plataforma preferida para receber pagamentos de pequenas startups a grandes corporações.</p>
-                </div>
-                
-                <div class="containerButton">
-                    <button class="buttonGeneric">Criar conta gratuita</button>
-                    <button class="buttonGeneric__nobg">Fale com um especialista <img src="./src/assets/svg/arrow-main-color.svg" alt="seta para direita"></button>
-                </div>
+          <div class="containerGenericInfo">
+            <div class="containerGenericTitle">
+              <h2>
+                Solução de pagamentos completa para você vender mais, simples
+                assim!
+              </h2>
+              <p>
+                A plataforma preferida para receber pagamentos de pequenas
+                startups a grandes corporações.
+              </p>
             </div>
 
-            <div>
-                <img src="./src/assets/svg/checkout.svg" alt="checkout">
-
-                <img src="./src/assets/svg/dashboard.svg" alt="dashbord">
+            <div class="containerButton">
+              <button class="buttonGeneric">Criar conta gratuita</button>
+              <button class="buttonGeneric__nobg">
+                Fale com um especialista
+                <img
+                  src="./src/assets/svg/arrow-main-color.svg"
+                  alt="seta para direita"
+                />
+              </button>
             </div>
+          </div>
+
+          <div class="containerImage">
+            <img src="./src/assets/svg/checkout.svg" alt="checkout" />
+
+            <img src="./src/assets/svg/dashboard.svg" alt="dashbord" />
+          </div>
         </div>
+
+        <div class="containerSponsorships">
+          <div class="item"><img src="./src/assets/Sponsorships/logo-wfp-black.svg" alt="Logo wfp" /></div>
+          <div class="item"><img src="./src/assets/Sponsorships/logo-g4-black.svg" alt="Logo g4" /></div>
+          <div class="item"><img src="./src/assets/Sponsorships/logo-captable-black.svg" alt="Logo captable" /></div>
+          <div class="item"><img src="./src/assets/Sponsorships/logo-cidade-alta-black.svg" alt="Logo cidade alta" /></div>
+          <div class="item"><img src="./src/assets/Sponsorships/logo-loud-black.svg" alt="Logo loud" /></div>
+          <div class="item"><img src="./src/assets/Sponsorships/logo-ribon-black.svg" alt="Logo ribon" /></div>
+        </div>
+      </div>
     </div>
     <script type="module" src="./src/scripts/script.js"></script>
   </body>

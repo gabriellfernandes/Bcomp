@@ -6,7 +6,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px;
-  overflow-x: hidden;
+  height: 100%;
 }
 
 /* coponents generics */
@@ -18,69 +18,183 @@
   justify-content: space-around;
   background-color: var(--secondary--color);
   border-radius: 1rem;
-  margin-top: 40px;
   position: relative;
   padding: 20px;
 }
 
-
 .containerGenericInfo {
-    height: 100%;
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    gap: 20px;
+  height: 100%;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.containerGenericTitle{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
+.containerGenericTitle {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
 }
 
 .containerGenericTitle > h2 {
-    font-weight: 500;
-    font-size: 36px;
-    margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 32px;
 }
 
 .containerGenericTitle > p {
-    font-weight: 400;
-    font-size: 16px;
-    margin-bottom: 77px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 77px;
 }
 
 .buttonGeneric {
-    padding: 16px 32px;
-    height: 56px;
-    background-color: var(--primary--color);
-    border-radius: 3px;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-size: 16px;
-    cursor: pointer;
+  padding: 16px 32px;
+  height: 56px;
+  background-color: var(--primary--color);
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 220px;
 }
 
-.buttonGeneric__nobg{
-    padding: 8px 16px;
-    background: transparent;
-    color: var(--primary--color);
-    font-weight: 400;
-    font-size: 16px;
+.buttonGeneric__nobg {
+  padding: 8px 16px;
+  background: transparent;
+  color: var(--primary--color);
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  min-width: 250px;
+}
+
+.buttonGeneric:hover {
+  filter: brightness(0.8);
+}
+
+.buttonGeneric__nobg:hover {
+  filter: brightness(0.5);
+}
+
+@media (max-width: 1024px) {
+  .containerGenericInfo {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .containerGeneric {
+    width: 100%;
+  }
+
+  .containerGenericTitle > h2 {
+    font-size: 30px;
+  }
+}
+
+/* Container Payment Solution */
+.pageWapper > .containerPaymentSolution {
+  width: 100%;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--secondary--color);
+  padding-bottom: 80px;
+}
+
+.containerButton {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerImage {
+  width: 40%;
+  position: relative;
+}
+
+.containerImage > img:first-child {
+  border-radius: 35px;
+  box-shadow: rgb(0 0 0 / 7%) 0px 20px 19px inset;
+  position: absolute;
+  top: 20%;
+  left: 1px;
+  height: 380px;
+  z-index: 1;
+}
+
+.containerImage > img:nth-child(2) {
+  min-width: 450px;
+}
+
+@media (max-width: 1250px) {
+  .containerImage > img:first-child {
+    top: 0%;
+    position: relative;
+    left: 30%;
+    min-height: 380px;
+    min-width: 190px;
+  }
+
+  .containerImage > img:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .containerImage {
+    display: none;
+  }
+
+  .containerButton {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* container Sponsorships */
+
+.containerSponsorships {
+  width: 870px;
+  height: 128px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #92929221;
+  border: 1px solid #9292923a;
+  filter: drop-shadow(rgba(0, 0, 0, 0.05) 10px 13px 30px);
+  backdrop-filter: blur(70px);
+  border-radius: 19px;
+  margin-top: 80px;
+}
+
+.containerSponsorships > .item {
     display: flex;
     align-items: center;
-    gap: 5px;
-    cursor: pointer;
+    justify-content: center;
+}
+@media (max-width: 950px) {
+    .containerSponsorships{
+        width: 80%;
+    }
 }
 
-
-/* Container 1 */
-.containerButton{
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+@media (max-width: 768px) {
+    .containerSponsorships{
+        width: 40%;
+        height: max-content;
+        min-width: 280px;
+        grid-template-columns: repeat(2, 4fr);
+    }
 }
-

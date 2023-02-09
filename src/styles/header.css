@@ -1,15 +1,16 @@
 header {
     width: 100vw;
-    height: 70px;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: relative;
     background-color: white;
+    padding-bottom: 120px;
 }
 
 header > img {
-    width: 180px;
+    width: 140px;
 }
 
 .mobileHeader{
@@ -24,6 +25,7 @@ header > img {
 .containerHeader > ul > li > a:hover{
     color: var(--primary--color);
     transition: all .4s ease;
+    font-size: 16px;
 }
 
 .containerHeader__mobile{
@@ -60,7 +62,7 @@ header > img {
     transition: all .4s ease;
 }
 
-@media (max-width: 600px){
+@media (max-width: 1024px){
     .containerHeader > ul{
         display: none;
     }
@@ -71,5 +73,11 @@ header > img {
 
     .mobileHeader{
         display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    header > img {
+        width: 140px;
     }
 }
