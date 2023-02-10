@@ -477,3 +477,42 @@
     width: 100%;
   }
 }
+
+/* container Payment Methods */
+.containerPaymentMethods > .containerGenericInfo > .containerGenericTitle > h2 {
+  margin-bottom: 10px;
+} 
+
+.containerPaymentMethods > .containerGenericInfo > .containerGenericTitle > p {
+  margin-bottom: 10px;
+} 
+
+.containerPaymentMethods__image {
+ width: 50%;
+}
+
+.containerPaymentMethods__image > img{
+  min-width: 450px;
+}
+
+@media (max-width: 1024px) {
+  .containerPaymentMethods{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .containerPaymentMethods > .containerGenericInfo{
+    width: 100%;
+  }
+
+  .containerPaymentMethods__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .containerPaymentMethods__image > img{
+    min-width: 80%;
+  }
+}
