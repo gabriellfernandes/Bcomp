@@ -15,7 +15,7 @@
   display: flex;
   width: 74%;
   height: max-content;
-
+  margin-top: 80px;
   justify-content: space-around;
   background-color: var(--secondary--color);
   border-radius: 1rem;
@@ -33,11 +33,12 @@
 
 .containerGenericTitle > ul {
   display: flex;
-  gap: 40px;
+  gap: 15px;
   flex-direction: column;
   -webkit-box-pack: justify;
   justify-content: space-between;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .containerGenericTitle > ul > li {
@@ -45,6 +46,7 @@
   align-items: center;
   gap: 20px;
   height: max-content;
+  margin: 0px;
 }
 
 .containerGenericTitle {
@@ -65,6 +67,18 @@
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 77px;
+}
+
+.containerGenericInfoWidth40 {
+  width: 40%;
+}
+
+.containerTitleNoMargin > h2 {
+  margin-bottom: 0px;
+}
+
+.containerTitleNoMargin > p {
+  margin-bottom: 20px;
 }
 
 .buttonGeneric {
@@ -100,9 +114,49 @@
   filter: brightness(0.5);
 }
 
+.containerGenericImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
+
+.containerGenericImage > img {
+  min-width: 502px;
+  min-height: 397px;
+}
+
+@media (max-width: 1250px) {
+  .containerGenericImage > img {
+    min-width: 452px;
+    min-height: 397px;
+  }
+
+  .containerGenericInfoWidth40 > .containerGenericTitle > h2 {
+    font-size: 24px;
+    font-family: Rubik, sans-serif;
+    font-weight: 500;
+  }
+}
+
 @media (max-width: 1024px) {
   .containerGenericInfo {
-    width: 80%;
+    width: 100%;
+  }
+
+  .containerGeneric {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .containerGenericImage {
+    width: 100%;
+  }
+
+  .containerGenericImage > img {
+    min-width: 100%;
+    min-height: auto;
   }
 }
 
@@ -123,6 +177,7 @@
 /* Container Payment Solution */
 .pageWapper > .containerPaymentSolution {
   width: 100%;
+  margin-top: 0px;
   border-radius: 0px;
   display: flex;
   align-items: center;
@@ -175,6 +230,10 @@
 @media (max-width: 1024px) {
   .containerImage {
     display: none;
+  }
+
+  .pageWapper > .containerPaymentSolution > .containerGenericInfo {
+    width: 80%;
   }
 
   .containerButton {
@@ -336,12 +395,7 @@
 
 @media (max-width: 1024px) {
   .containerSmartSignature {
-    flex-direction: column;
     gap: 40px;
-  }
-
-  .containerSmartSignature > .containerGenericInfo {
-    width: 100%;
   }
 
   .containerSmartSignature > img {
@@ -357,7 +411,6 @@
   gap: 40px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 80px;
 }
 
 .containerSponsors > .item {
@@ -464,17 +517,16 @@
 }
 
 @media (max-width: 1024px) {
-  .containerPlans {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .containerPlans__plan {
     width: 100%;
   }
 }
 
 /* container Payment Methods */
+.containerPaymentMethods {
+  margin-top: 80px;
+}
+
 .containerPaymentMethods > .containerGenericInfo > .containerGenericTitle > h2 {
   margin-bottom: 10px;
 }
@@ -495,15 +547,6 @@
 }
 
 @media (max-width: 1024px) {
-  .containerPaymentMethods {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .containerPaymentMethods > .containerGenericInfo {
-    width: 100%;
-  }
-
   .containerPaymentMethods__image {
     display: flex;
     align-items: center;
@@ -513,5 +556,110 @@
 
   .containerPaymentMethods__image > img {
     min-width: 80%;
+  }
+}
+
+/* Container Financial Automation */
+
+.containerFinancialAutomation > .containerFinancialAutomation__Image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
+
+.containerFinancialAutomation .containerFinancialAutomation__Image > img {
+  min-width: 502px;
+  min-height: 397px;
+}
+
+@media (max-width: 1250px) {
+  .containerFinancialAutomation .containerFinancialAutomation__Image > img {
+    min-width: 452px;
+    min-height: 397px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .containerFinancialAutomation > .containerFinancialAutomation__Image {
+    width: 100%;
+  }
+
+  .containerFinancialAutomation .containerFinancialAutomation__Image > img {
+    min-width: 100%;
+    min-height: auto;
+  }
+
+  .containerFinancialAutomation .containerGenericInfo {
+    width: 100%;
+  }
+}
+
+/* container study case*/
+
+.containerCaseStudy > .containerGenericInfo > .buttonGeneric {
+  width: 40%;
+  min-width: 240px;
+  text-align: center;
+}
+
+/* container Get Started Today */
+.pageWapper > .containerGetStartedToday {
+  height: 350px;
+  padding-left: 80px;
+}
+
+.pageWapper > .containerGetStartedToday > .containerGenericInfo {
+  width: 100%;
+}
+
+.containerGetStartedToday > .containerGenericInfo > .containerGenericTitle  {
+  gap: 2px;
+  width: 60%;
+}
+
+.containerGetStartedToday > .containerGenericInfo > .containerGenericTitle > h2 {
+  margin-bottom: 20px;
+}
+
+.containerGetStartedToday > .containerGenericInfo > .containerGenericTitle > p {
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.containerGetStartedToday
+  > .containerGenericInfo
+  > .containerGenericTitle
+  > img {
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.containerGetStartedToday > .card {
+  right: 80px;
+  left: auto;
+}
+
+@media (max-width: 1024px) {
+  .containerGetStartedToday > .card {
+    display: none;
+  }
+
+  .containerGetStartedToday > .containerGenericInfo > .containerGenericTitle  {
+    gap: 2px;
+    width: 100%;
+  }
+
+  .pageWapper > .containerGetStartedToday > .containerGenericInfo {
+    width: 80%;
+  }
+  
+
+  .pageWapper > .containerGetStartedToday {
+    height: 350px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
