@@ -397,11 +397,7 @@
 /* container plans */
 
 .containerPlans {
-  background: linear-gradient(
-    98.81deg,
-    #2815ff 0%,
-    var(--primary--color) 100%
-  );
+  background: linear-gradient(98.81deg, #2815ff 0%, var(--primary--color) 100%);
   padding: 40px;
   margin-top: 82px;
   position: relative;
@@ -481,27 +477,30 @@
 /* container Payment Methods */
 .containerPaymentMethods > .containerGenericInfo > .containerGenericTitle > h2 {
   margin-bottom: 10px;
-} 
+}
 
 .containerPaymentMethods > .containerGenericInfo > .containerGenericTitle > p {
   margin-bottom: 10px;
-} 
-
-.containerPaymentMethods__image {
- width: 50%;
 }
 
-.containerPaymentMethods__image > img{
+.containerPaymentMethods__image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerPaymentMethods__image > img {
   min-width: 450px;
 }
 
 @media (max-width: 1024px) {
-  .containerPaymentMethods{
+  .containerPaymentMethods {
     flex-direction: column;
     gap: 20px;
   }
 
-  .containerPaymentMethods > .containerGenericInfo{
+  .containerPaymentMethods > .containerGenericInfo {
     width: 100%;
   }
 
@@ -512,7 +511,7 @@
     width: 100%;
   }
 
-  .containerPaymentMethods__image > img{
+  .containerPaymentMethods__image > img {
     min-width: 80%;
   }
 }
