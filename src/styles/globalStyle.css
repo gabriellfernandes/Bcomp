@@ -1,6 +1,9 @@
 :root{
     --primary--color: #2715FF;
     --secondary--color: white;
+    --grey-1: #f6f7f9;
+    --grey-2: #fff3f4;
+    --grey-3: #929292;
 }
 
 body{
@@ -10,4 +13,17 @@ body{
     width: 100vw;
     height: max-content;
     padding-bottom: 180px;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--primary--color);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track{
+    background: rgb(255, 255, 255);
 }
