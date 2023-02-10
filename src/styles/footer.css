@@ -1,0 +1,130 @@
+footer {
+  width: 100vw;
+  background: var(--black-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 180px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: var(--secondary--color);
+}
+
+.containerFooter {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerFooter > .logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerFooter > .logo > img {
+  width: 140px;
+}
+
+.containerFooter > .logo > p {
+  color: var(--secundary--color);
+  font-weight: 500;
+}
+
+.containerFooter > .info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20%;
+  margin-top: 24px;
+}
+
+.containerFooter > .info > .info_item1 > .info_item1__title > img {
+  margin-top: 24px;
+}
+
+.containerFooter > .info > .info_item1 > .info_item1__list {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.containerFooter
+  > .info
+  > .info_item1
+  > .info_item1__list
+  > .info_item1__list__itens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 350px;
+  gap: 15%;
+}
+
+.containerFooter > .info > .info_item2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-self: end;
+}
+
+.containerFooter > .info > .info_item2 > ul > li {
+  margin-bottom: 24px;
+}
+
+.containerFooter > .info > .info_item2 > ul > li > a {
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.containerFooter > .info > .info_item2 > ul > li > a:hover {
+    filter: brightness(0.7);
+}
+
+.containerFooter > .footer {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerFooter > .footer > .footer__title {
+  display: flex;
+  width: 40%;
+  gap: 20px;
+  flex-direction: column;
+  color: rgb(146, 146, 146);
+  font-family: Rubik, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.containerFooter > .footer > .footer__list {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .containerFooter > .info {
+    grid-template-columns: 1fr;
+    gap: 10%;
+    margin-bottom: 40px;
+  }
+  .containerFooter > .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .containerFooter > .footer > .footer__title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .containerFooter > .footer > .footer__list {
+    width: 100%;
+  }
+}

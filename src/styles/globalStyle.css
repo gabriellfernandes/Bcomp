@@ -4,6 +4,8 @@
     --grey-1: #f6f7f9;
     --grey-2: #fff3f4;
     --grey-3: #929292;
+    --black-1: #000;
+    --black-2: #191c1f;
 }
 
 body{
@@ -12,7 +14,6 @@ body{
     overflow-x: hidden;
     width: 100vw;
     height: max-content;
-    padding-bottom: 180px;
 }
 
 body::-webkit-scrollbar{
