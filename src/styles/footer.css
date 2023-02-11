@@ -108,6 +108,11 @@ footer {
   gap: 20px;
 }
 
+.react {
+  height: 60px;
+  width: auto; 
+}
+
 @media (max-width: 768px) {
   .containerFooter > .info {
     grid-template-columns: 1fr;
