@@ -314,7 +314,6 @@
 .containerPaymentLinksImage {
   width: 50%;
   border-radius: 19px;
-  background: var(--grey-2);
   display: flex;
   gap: 20px;
   flex-direction: column;
