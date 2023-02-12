@@ -29,8 +29,9 @@
 
 .containerPlansBuy__title > ul > li {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+ 
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   justify-content: space-between;
   width: 240px;
@@ -56,7 +57,7 @@
   width: 100%;
   display: grid;
   justify-content: space-between;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   flex-wrap: wrap;
   margin-top: 40px;
 }
@@ -70,7 +71,7 @@
   padding: 38px;
   border-radius: 19px;
   margin-top: 25px;
-  max-width: 390px;
+  width: 85%;
   min-width: 390px;
 }
 
@@ -207,7 +208,7 @@
 .containerSell {
   width: 80%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .containerSell > div {
@@ -218,6 +219,8 @@
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   width: 95%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 
