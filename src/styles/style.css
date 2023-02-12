@@ -601,6 +601,14 @@
   .containerECommerce > .containerGenericTitle > h2 {
     font-size: 24px;
   }
+
+  .containerECommerce > .containerGenericTitle {
+    width: 100%;
+  }
+
+  .containerECommerce > .containerGenericTitle > ul > li {
+    font-weight: 400;
+  }
 }
 
 /* Container Financial Automation */
