@@ -30,7 +30,7 @@
 .containerPlansBuy__title > ul > li {
   display: flex;
  
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 10px;
   justify-content: space-between;
