@@ -26,9 +26,9 @@
 
       <div class="containerHeader">
         <ul>
-          <li><a href="#">Planos</a></li>
+          <li><a href="./src/pages/planos.html">Planos</a></li>
           <li><a href="#">Acessar Dashboard</a></li>
-          <li><img src="./src/assets/global/brazil-flag-icon.050724f.webp" alt="bandeira" style="width: 25px; height: 25px; position: absolute; top: 23px;"></li>
+          <li class="liIdioma" id="hamburger-button3"><img src="./src/assets/global/brazil-flag-icon.050724f.webp" alt="bandeira" style="width: 25px; height: 25px;"><img id="imgIdiomaDektop" src="./src/assets/global/simple-arrow.svg" class="imgidiomaClassDektop"></li>
         </ul>
 
         <button id="hamburger-button" class="hamburger--button mobileHeader">
@@ -37,14 +37,24 @@
           <div class="bar3"></div>
         </button>
 
-        <img src="./src/assets/global/brazil-flag-icon.050724f.webp" alt="bandeira" style="width: 40px; height: 40px; position: absolute; top: 17px; left: auto; right: 28%;" class="mobileHeader">
+        <div class="mobileIdioma"><img id="hamburger-button2" src="./src/assets/global/brazil-flag-icon.050724f.webp" alt="bandeira" style="width: 40px; height: 40px;" class="mobileHeader"> <img src="./src/assets/global/simple-arrow.svg" alt="" id="imgIdioma" class="imgidiomaClass"></div>
       </div>
 
       <div class="containerHeader__mobile mobileHeader">
        
         <ul id="menu" class="hiddenMenu">
-          <li><a href="#">Planos</a></li>
+          <li><a href="./src/pages/planos.html">Planos</a></li>
           <li><a href="#">Acessar Dashboard</a></li>
+        </ul>
+      </div>
+
+      <div class="containerIdioma" id="menuIdioma">
+
+        <h2> Selecione seu idioma</h2>
+
+        <ul>
+          <li><img src="./src/assets/global/brazil-flag-icon.050724f.webp" alt="brasil"> Portugues</li>
+          <li><img src="./src/assets/global/usa-flag-icon.3230684.webp" alt="brasil"> Inglês</li>
         </ul>
       </div>
     </header>
