@@ -1,0 +1,167 @@
+.containerFaq {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.containerFaq > h2 {
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 32px;
+}
+
+.containerFaq__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10%;
+  height: max-content;
+}
+
+.containerFaq__title {
+  color: rgb(0, 0, 0);
+  margin-bottom: 8px;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  padding: 15px 24px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  border-radius: 19px;
+}
+
+.containerFaq__title > h2 {
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 0px;
+}
+
+.containerFaq__title > img {
+    transform: rotate(-90deg);
+    transition: all 1s;
+}
+
+.containerFaq__title > .openImg {
+    transform: rotate(0deg);
+}
+
+.containerFaq__list > div {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.containerFaq__text_0 {
+  opacity: 0;
+}
+
+.containerFaq__text {
+  height: 0px;
+  margin-bottom: 8px;
+  margin-top: -20px;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  color: black;
+  opacity: 1;
+  padding: 0px 24px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 0px 0px 19px 19px;
+  transition: height 1s, opacity 1s;
+}
+
+.containerFaq__text > p {
+    margin-top: 20px;
+}
+
+.open {
+  height: 140px;
+  opacity: 1;
+}
+
+.textWhiteOpen{
+    height: 185px;
+    opacity: 1;
+}
+
+@media (max-width: 1750px) {
+    .textWhiteOpen {
+        height: 230px;
+    }
+
+    .open {
+        height: 170px;
+        opacity: 1;
+      }
+}
+
+@media (max-width: 1250px) {
+    .textWhiteOpen {
+        height: 320px;
+    }
+
+    .open {
+        height: 200px;
+        opacity: 1;
+      }
+}
+
+
+@media (max-width: 1024px) { 
+    .containerFaq__list {
+        grid-template-columns: 1fr;
+        grid-gap: 0%;
+    }
+
+    .open {
+        height: 110px;
+    }
+
+    .textWhiteOpen {
+        height: 180px;
+    }
+}
+
+
+@media (max-width: 900px) { 
+    .open {
+        height: 140px;
+    }
+
+    .textWhiteOpen {
+        height: 200px;
+    }
+} 
+
+
+@media (max-width: 650px) { 
+    .open {
+        height: 220px;
+    }
+
+    .textWhiteOpen {
+        height: 320px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .open {
+        height: 260px;
+    }
+
+    .textWhiteOpen {
+        height: 450px;
+    }
+} 
+
+@media (max-width: 320px) {
+    .open {
+        height: 300px;
+    }
+}

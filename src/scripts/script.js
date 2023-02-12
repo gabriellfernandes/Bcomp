@@ -4,3 +4,4 @@ import { createSolutionList } from "./solutionList.js"
 burgerButton()
 
 createSolutionList()
+

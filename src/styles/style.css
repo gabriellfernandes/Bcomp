@@ -558,6 +558,47 @@
   }
 }
 
+/* container E-Commerce */
+.containerECommerce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerECommerce > .containerGenericTitle {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Rubik, sans-serif;
+    font-weight: 500;
+}
+
+.containerECommerce > .containerGenericTitle > .containerECommerce__image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  gap: 20px;
+}
+
+.containerECommerce > .containerGenericTitle > .containerECommerce__image  > img{
+  width: 40%;
+  max-width:295.359px;
+  min-width: 204.359px;
+
+}
+
+@media (max-width: 1024px) {
+  .containerECommerce > .containerGenericTitle > .containerECommerce__image {
+    flex-direction: column;
+  }
+
+  .containerECommerce > .containerGenericTitle > h2 {
+    font-size: 24px;
+  }
+}
+
 /* Container Financial Automation */
 
 .containerFinancialAutomation > .containerFinancialAutomation__Image {
@@ -612,12 +653,15 @@
   width: 100%;
 }
 
-.containerGetStartedToday > .containerGenericInfo > .containerGenericTitle  {
+.containerGetStartedToday > .containerGenericInfo > .containerGenericTitle {
   gap: 2px;
   width: 60%;
 }
 
-.containerGetStartedToday > .containerGenericInfo > .containerGenericTitle > h2 {
+.containerGetStartedToday
+  > .containerGenericInfo
+  > .containerGenericTitle
+  > h2 {
   margin-bottom: 20px;
 }
 
@@ -644,7 +688,7 @@
     display: none;
   }
 
-  .containerGetStartedToday > .containerGenericInfo > .containerGenericTitle  {
+  .containerGetStartedToday > .containerGenericInfo > .containerGenericTitle {
     gap: 2px;
     width: 100%;
   }
@@ -652,7 +696,6 @@
   .pageWapper > .containerGetStartedToday > .containerGenericInfo {
     width: 80%;
   }
-  
 
   .pageWapper > .containerGetStartedToday {
     height: 350px;

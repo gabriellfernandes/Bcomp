@@ -1,0 +1,342 @@
+.containerPlansBuy {
+  width: 80%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerPlansBuy__title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.containerPlansBuy__title > h2 {
+  font-weight: bold;
+  font-size: 32px;
+  color: black;
+  max-width: 650px;
+}
+
+.containerPlansBuy__title > ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.containerPlansBuy__title > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: space-between;
+  width: 240px;
+}
+
+.containerPlansBuy__title > ul > li > .title {
+  width: 240px;
+}
+
+.containerPlansBuy__title > ul > li > .title > h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 12px;
+  margin-top: 5px;
+}
+
+.containerPlansBuy__title > ul > li > .title > p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.containerPlans__plans {
+  width: 100%;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.containerPlans__plans > .containerPlans__plans-item {
+  background: rgb(255, 255, 255);
+  color: var(--black-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px;
+  border-radius: 19px;
+  margin-top: 25px;
+  max-width: 390px;
+  min-width: 390px;
+}
+
+.containerPlans__plans > .containerPlans__plans-item > .buttonGeneric__nobg {
+  min-width: max-content;
+}
+
+.containerPlans__plans-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerPlans__plans-item-info > h3 {
+  font-weight: 400;
+  font-size: 54px;
+  margin-bottom: 0px;
+}
+
+.containerPlans__plans-item-info > h3 > span {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey-3);
+}
+
+.containerPlans__plans-item-info-title {
+  display: flex;
+  gap: 20px;
+}
+
+.containerPlans__plans-item-title-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.badged {
+  background-color: rgba(120, 191, 57, 0.3);
+  padding: 5px 14px;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  color: rgb(46, 92, 14);
+  font-size: 12px;
+  font-weight: 400;
+  width: 155px;
+}
+
+.containerPlans__plans-item-title-info > .badgedPt {
+  background-color: var(--primary--color);
+  color: white;
+  width: max-content;
+}
+
+.containerPlans__plans-item-title-info > .badgft {
+  background-color: var(--grey-3);
+  color: rgb(247, 238, 238);
+  width: max-content;
+}
+
+.containerPlans__plans-item-title-info > p {
+  margin: 8px 0px 0px;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--grey-3);
+}
+
+.containerPlans__plans-item-title-info > h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.containerPlans__plans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.containerPlans__plans-list > li {
+  display: flex;
+  padding: 24px 0px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.containerPlans__plans-list > .noBorder {
+  border: none;
+}
+
+.containerPlans__plans-list > li > div > p {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.containerPlans__plans-list > li > div > span {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey-3);
+}
+
+.containerPlans__plans-list > li > .carditem {
+  display: flex;
+  gap: 10px;
+  text-align: end;
+}
+
+.containerPlans__plans-list > li > .carditem > div > span {
+  color: var(--grey-3);
+}
+
+.containerPlans__plans-list > li > ul {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--grey-3);
+}
+
+.containerPlans__plans-list > li > ul > li {
+  display: flex;
+  padding: 14px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular {
+  border: solid 4px var(--primary--color);
+}
+
+.containerSell {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.containerSell > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px;
+  border-radius: 19px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  width: 95%;
+}
+
+
+.containerSell__title > h2 {
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+}
+
+.containerSell__title > p {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey-3);
+}
+
+.containerSell__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.containerSell__item > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(120, 191, 57, 0.3);
+  padding: 5px 14px;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  color: rgb(46, 92, 14);
+  font-size: 12px;
+  font-weight: 400;
+  width: 155px;
+}
+
+.containerSell__item > h3 {
+  font-weight: 500;
+  font-size: 24px;
+  color: rgb(51, 195, 68);
+  font-weight: bold;
+}
+
+.containerSell__item > a {
+  min-width: auto;
+  max-width: max-content;
+  width: max-content;
+}
+
+@media (max-width: 1450px) {
+  .containerPlans__plans {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .containerPlans__plans {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .containerSell {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerPlansBuy__title {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .containerPlansBuy__title > ul {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .containerSell > div{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .containerPlansBuy__title > ul {
+    justify-content: center;
+  }
+
+  .containerPlansBuy {
+    width: 100%;
+  }
+
+  .containerPlans__plans {
+    width: 90%;
+  }
+
+  .containerPlans__plans > .containerPlans__plans-item {
+    width: 100%;
+    max-width: auto;
+    min-width: auto;
+  }
+
+  .containerSell{
+    width: 100%;
+  }
+
+  .containerSell > div{
+    width: 90%;
+  }
+}
+
+
